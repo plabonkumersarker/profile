@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Plabon</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Credentials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Plabon</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Credentials</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Plabon</h1>
+        <p class="section__text__p2">Blending linguistic expertise on Artificial Intelligence<p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/plabonkumersarker'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/plabonkumersarker'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Interests</h3>
+              <p>Artificial Intelligence (AI), Natural Language Processing (NLP), and Machine Learning (ML)</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.A.<br />English literature and linguistics, <br/> National University, Bangladesh</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+            I'm Plabon, an English literature graduate with a deep interest in AI and machine learning. My studies in NLP were enriched by hands-on courses from Coursera, Google, and FreeCodeCamp. By integrating linguistic knowledge with cutting-edge AI techniques, I aim to advance the field and develop impactful, language-driven technologies.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technologies</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML, CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Operating Systems</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+ <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Competitive programming</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>             
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Projects</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Vocabulary Practice App</h3>
+                  <a href="https://plabonkumersarker.github.io/vocabulary/"><p>Demo</p></a>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Color Game App</h3>
+                  <a href="https://plabonkumersarker.github.io/colorgame/colorProject.html"><p>Demo</p></a>
+                </div>
+              </article>
+             <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>To-do list App</h3>
+                  <a href="https://plabonkumersarker.github.io/todoproject/index.html"><p>Demo</p></a>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Meal Tracker Tool(offline)</h3>
+                  <a href="https://github.com/plabonkumersarker/meal-tracker-offline"><p>source code</p></a>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Atcoder Beginner Contest Opener tool</h3>
+                  <a href="https://plabonkumersarker.github.io/abco/"><p>Demo</p></a>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Youtube tool(thumbnail free)</h3>
+                  <a href="https://plabonkumersarker.github.io/youtube/"><p>Demo</p></a>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Percentage Calculator App</h3>
+                  <a href="https://plabonkumersarker.github.io/percentage/"><p>Demo</p></a>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Multiple link opener App</h3>
+                  <a href="https://plabonkumersarker.github.io/webgen/"><p>Demo</p></a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Professional Credentials</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          
+      <!--@@@@@@@@@ certificates -->    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Responsive Web Design <br/> freeCodeCamp</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/1.png')"
+              >
+         
+                Open
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://freecodecamp.org/certification/plabonkumersarker/responsive-web-design'"
+              >
+                Verify
+              </button>
+            </div>
+          </div>
+                <!--@@@@@@@@@ certificates -->    
+ 
+       <!--@@@@@@@@@ certificates -->    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">JavaScript Algorithms and Data Structures, freeCodeCamp</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/2.png')"
+              >
+         
+                Open
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://freecodecamp.org/certification/plabonkumersarker/javascript-algorithms-and-data-structures'"
+              >
+                Verify
+              </button>
+            </div>
+          </div>
+                <!--@@@@@@@@@ certificates -->    
+       <!--@@@@@@@@@ certificates -->    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Python for Everybody (Specialization), University of Michigan</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/3.png')"
+              >
+         
+                Open
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://coursera.org/share/2c1b5de57baedcae7be02c1c5866703e'"
+              >
+                Verify
+              </button>
+            </div>
+          </div>
+                <!--@@@@@@@@@ certificates -->    
+                
+       <!--@@@@@@@@@ certificates -->    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/4.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Python 3 Programming (Specialization), University of Michigan</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/4.png')"
+              >
+         
+                Open
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://coursera.org/share/b61763c2b2f6a001819ab10801e1f71f'"
+              >
+                Verify
+              </button>
+            </div>
+          </div>
+                <!--@@@@@@@@@ certificates -->    
+                
+      <!--@@@@@@@@@ certificates -->    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/5.png"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Python Basics, University of Michigan</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/5.png')"
+              >
+         
+                Open
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://coursera.org/share/285a37b7f39e53e16388c54782b6d098'"
+              >
+                Verify
+              </button>
+            </div>
+          </div>
+                <!--@@@@@@@@@ certificates -->  
+
+      <!--@@@@@@@@@ certificates -->    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/6.png"
+                alt="Project 6"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Python Functions, Files, and Dictionaries, University of Michigan</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/6.png')"
+              >
+         
+                Open
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://coursera.org/share/4edeeea54019eb3f9c8dee22067badd5'"
+              >
+                Verify
+              </button>
+            </div>
+          </div>
+                <!--@@@@@@@@@ certificates -->    
+ 
+       <!--@@@@@@@@@ certificates -->    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/7.png"
+                alt="Project 7"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Data Collection and Processing with Python, University of Michigan</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/7.png')"
+              >
+         
+                Open
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://coursera.org/share/8b26e88979fd387facdb145c96559297'"
+                
+              >
+                Verify
+              </button>
+            </div>
+          </div>
+                <!--@@@@@@@@@ certificates -->    
+       <!--@@@@@@@@@ certificates -->    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/8.png"
+                alt="Project 8"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Python Classes and Inheritance, University of Michigan</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/8.png')"
+              >
+         
+                Open
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://coursera.org/share/8948b486fef4e7ff9e10bc33331c844f'"
+               
+              >
+                Verify
+              </button>
+            </div>
+          </div>
+                <!--@@@@@@@@@ certificates -->    
+                
+       <!--@@@@@@@@@ certificates -->    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/9.png"
+                alt="Project 9"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Python Project: Software Engineering and Image Manipulation, University of Michigan</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/9.png')"
+              >
+         
+                Open
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                
+                onclick="location.href='https://coursera.org/share/251d889d04c737d376b1f1089c0b5da8'"
+              >
+                Verify
+              </button>
+            </div>
+          </div>
+                <!--@@@@@@@@@ certificates -->    
+                
+      <!--@@@@@@@@@ certificates -->    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/10.png"
+                alt="Project 10"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Programming for Everybody (Getting started with Python), University of Michigan</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/10.png')"
+              >
+         
+                Open
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://coursera.org/share/0b613eefe301839ca7aef0cbcd4923a0'"
+              >
+                Verify
+              </button>
+            </div>
+          </div>
+                <!--@@@@@@@@@ certificates -->         
+                
+        <!--@@@@@@@@@ certificates -->    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/11.png"
+                alt="Project 11"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Python Data Structures, University of Michigan</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/11.png')"
+              >
+         
+                Open
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://coursera.org/share/2679eefabc52e99822d200ca7eb44435'"
+              >
+                Verify
+              </button>
+            </div>
+          </div>
+                <!--@@@@@@@@@ certificates -->    
+ 
+       <!--@@@@@@@@@ certificates -->    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/12.png"
+                alt="Project 12"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Using Python to Access Web Data, University of Michigan</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/12.png')"
+              >
+         
+                Open
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://coursera.org/share/3fa73adb44a6bf69558c3e688e0dce86'"
+              >
+                Verify
+              </button>
+            </div>
+          </div>
+                <!--@@@@@@@@@ certificates -->    
+       <!--@@@@@@@@@ certificates -->    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/13.png"
+                alt="Project 13"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Using Database with Python,  University of Michigan</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/13.png')"
+              >
+         
+                Open
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://coursera.org/share/c8a57d3402249fdf532fdc90901479d6'"
+              >
+                Verify
+              </button>
+            </div>
+          </div>
+                <!--@@@@@@@@@ certificates -->    
+                
+       <!--@@@@@@@@@ certificates -->    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/14.png"
+                alt="Project 14"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Capstone : Retrieving, Processing, and Visualizing Data with Python, University of Michigan</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/14.png')"
+              >
+         
+                Open
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://coursera.org/share/1dd134cad2cd239aecd20150c5066da4'"
+              >
+                Verify
+              </button>
+            </div>
+          </div>
+                <!--@@@@@@@@@ certificates -->    
+                
+      <!--@@@@@@@@@ certificates -->    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/15.png"
+                alt="Project 15"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Technical Support Fundamentals, Google</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/15.png')"
+              >
+         
+                Open
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://coursera.org/share/6c458d31411571d726be58331ed0e28b'"
+              >
+                Verify
+              </button>
+            </div>
+          </div>
+                <!--@@@@@@@@@ certificates -->                                  
+      <!--@@@@@@@@@ certificates -->    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/16.png"
+                alt="Project 16"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">The Bits and Bytes of Computer Networking, Google</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/16.png')"
+              >
+         
+                Open
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://coursera.org/share/805b29777680ac2c5c291d30d92a3ddc'"
+              >
+                Verify
+              </button>
+            </div>
+          </div>
+                <!--@@@@@@@@@ certificates -->    
+ 
+       <!--@@@@@@@@@ certificates -->    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/17.png"
+                alt="Project 17"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Operating Systems and You: Becoming a power user, Google</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('./assets/17.png')"
+              >
+         
+                Open
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://coursera.org/share/62ab6b9e72d39f9c4018a021404556e6'"
+              >
+                Verify
+              </button>
+            </div>
+          </div>
+                <!--@@@@@@@@@ certificates -->    
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:plabonkumersarker@gmail.com">Email  </a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/plabonkumersarker">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Credentials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Plabon. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
