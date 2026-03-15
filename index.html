@@ -572,13 +572,11 @@
 
     <!-- Social links -->
     <div class="hero-links">
-      <a href="https://www.linkedin.com/in/plabonkumersarker" target="_blank" class="soc-pill">
-        <img src="./assets/linkedin.png" alt="LinkedIn"/> LinkedIn
-      </a>
+
       <a href="https://github.com/plabonkumersarker" target="_blank" class="soc-pill">
         <img src="./assets/github.png" alt="GitHub"/> GitHub
       </a>
-      <a href="mailto:plabonkumersarker@gmail.com" class="soc-pill">
+      <a href="/cdn-cgi/l/email-protection#abdbc7cac9c4c5c0dec6ced9d8cad9c0ced9ebccc6cac2c785c8c4c6" class="soc-pill">
         <img src="./assets/email.png" alt="Email"/> Email
       </a>
     </div>
@@ -933,14 +931,11 @@
         conversations about AI and linguistics. Feel free to reach out anytime.
       </p>
       <div class="ct-cards rv">
-        <a href="mailto:plabonkumersarker@gmail.com" class="ct-card">
+        <a href="/cdn-cgi/l/email-protection#83f3efe2e1ecede8f6eee6f1f0e2f1e8e6f1c3e4eee2eaefade0ecee" class="ct-card">
           <div class="ct-icon"><img src="./assets/email.png" alt="Email"/></div>
           <div><div class="ct-lbl">Email</div><div class="ct-val">Send a message</div></div>
         </a>
-        <a href="https://www.linkedin.com/in/plabonkumersarker" target="_blank" class="ct-card">
-          <div class="ct-icon"><img src="./assets/linkedin.png" alt="LinkedIn"/></div>
-          <div><div class="ct-lbl">LinkedIn</div><div class="ct-val">Connect with me</div></div>
-        </a>
+
       </div>
     </div>
   </div>
@@ -964,7 +959,7 @@
 <!-- ═══════════════════════════════════════
      JS
 ═══════════════════════════════════════ -->
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   /* mobile menu */
   function toggleMenu(){
     document.getElementById('hbg').classList.toggle('open');
@@ -999,11 +994,8 @@
     entries.forEach(e => {
       if(e.isIntersecting){ e.target.classList.add('in'); ro.unobserve(e.target); }
     });
-  },{threshold:0.08});
-  document.querySelectorAll('.rv').forEach((el,i) => {
-    el.style.transitionDelay = (i % 5) * 0.07 + 's';
-    ro.observe(el);
-  });
+  },{threshold:.15});
+  document.querySelectorAll('.rv').forEach(el => ro.observe(el));
 </script>
 </body>
 </html>
